@@ -1,0 +1,115 @@
+:root {
+  // COLORS
+
+  --color-primary-light: #eed4dc;
+  --color-primary-shadow: #e4cbd2;
+  --color-primary-dark: #f299a2;
+  --color-secondary: #ff94a1;
+  --color-tertiary-light: #3c5568;
+  --color-tertiary-dark: #374e60;
+  --color-tertiary: #fff0a9;
+
+  // BLACK
+  --color-black-light: #eee;
+  --color-black-dark: #333;
+
+  //   FONT SIZES
+
+  --heading: 2.5rem;
+
+  //  SIZES
+
+  --flake-width: 1900px;
+  --path-width: 1400px;
+  --flake-height: 650px;
+}
+
+// MIXINS
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin min-full-screen {
+  width: 100%;
+  min-height: 100vh;
+}
+
+// BASE STYLES
+
+body {
+  margin: 0;
+  font-family: Apercu Pro, "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: auto;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  @include min-full-screen;
+  overflow: hidden;
+}
+
+.flex-100-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-50-50 {
+  display: flex;
+
+  & > div {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.icon {
+  display: block;
+  overflow: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+svg {
+  z-index: 9;
+  display: block;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex-start{
+  justify-content: flex-start !important;
+  text-align: left;
+}

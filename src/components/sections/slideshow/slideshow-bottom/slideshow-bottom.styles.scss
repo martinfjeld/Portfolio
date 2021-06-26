@@ -1,0 +1,30 @@
+.slideshow-description {
+  display: flex;
+  flex-direction: column;
+  min-height: 40vh;
+  background-color: var(--color-tertiary-light);
+  &__cta-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-around;
+    min-height: 100%;
+    box-shadow: 5px 5px 20px #293b48, -5px -5px 20px #4c6c85;
+    flex: 1;
+
+    .details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 7rem;
+    }
+
+    & > div {
+      flex: 0 0 50%;
+    }
+  }
+}

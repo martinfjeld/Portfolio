@@ -1,0 +1,25 @@
+.slideshow-header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 9;
+  flex: 0 0 25%;
+  justify-content: flex-start;
+  margin-left: 7rem;
+  padding: 1rem 0;
+
+  .project-title {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 6rem;
+    margin: 0px;
+    padding: 0px;
+    opacity: 0.9;
+    white-space: nowrap;
+
+    .technologies {
+      font-size: 2rem;
+      font-weight: 300;
+    }
+  }
+}

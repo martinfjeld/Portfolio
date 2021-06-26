@@ -1,0 +1,45 @@
+.CTA-button {
+  margin: 4rem auto;
+
+  transform: scale(1) translateY(0rem);
+  box-shadow: 0 0.5rem 0.4rem rgba(#000000, 0.2);
+  border-radius: 1rem;
+  border-bottom: 2px solid #f58a8f;
+  padding: 1rem;
+  font-size: 2.8rem;
+  font-weight: 900;
+  text-decoration: none;
+  color: #f1f1f1;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.1, 1.5);
+  position: relative;
+
+  // &::before {
+  //   content: "";
+  //   background-color: inherit;
+  //   height: 1.5rem;
+  //   width: 3rem;
+  //   position: absolute;
+  //   bottom: -2rem;
+  //   box-shadow: inherit;
+  //   left: -2rem;
+  //   border-radius: 5px;
+  // }
+
+  &::after {
+    content: "";
+    background-color: inherit;
+    height: 3px;
+    width: 100%;
+    z-index: 9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &:hover {
+    transform: scale(1.2) translateY(-0.5rem);
+    box-shadow: 0rem 1.5rem 0.7rem rgba(#000000, 0.2);
+    border-radius: 2rem;
+  }
+}

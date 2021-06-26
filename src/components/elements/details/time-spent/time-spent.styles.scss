@@ -1,0 +1,9 @@
+.time {
+  display: flex;
+  align-items: center;
+
+  &-icon {
+    position: relative;
+    margin-right: 1rem;
+  }
+}

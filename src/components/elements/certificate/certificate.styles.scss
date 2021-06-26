@@ -1,0 +1,51 @@
+.certificate {
+  display: flex;
+  flex: 0 0 33%;
+  justify-content: center;
+
+  &__image-container {
+    overflow: hidden;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #3b5367, #324656);
+    box-shadow: 15px 15px 30px #293b48, -15px -15px 30px #456278;
+    border: 1.5rem solid #3e576c;
+    font-size: 0px;
+  }
+
+  &__wrapper {
+    width: 80%;
+    background-color: #374e60;
+    padding: 2rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    color: #ccc;
+    font-size: 1.7rem;
+    padding: 2rem;
+  }
+
+  &__description {
+    flex: 0 0 80%;
+    margin-right: auto;
+  }
+
+  &__duration {
+    align-items: center;
+    display: flex;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    position: relative;
+    margin-right: auto;
+    padding: 1rem 0;
+
+    &-logo {
+      fill: var(--color-primary-dark);
+      width: 2rem;
+      height: 2rem;
+      margin-right: 1rem;
+    }
+  }
+}
