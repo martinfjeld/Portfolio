@@ -1,17 +1,18 @@
 import React from "react";
+import "./certificates-divider.styles.scss";
 
 function CertificatesDivider(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1535"
-      height="97"
+      width="100%"
+      height="100%"
       x="0"
       y="0"
       enableBackground="new 0 0 1535 97"
-      overflow="visible"
       viewBox="0 0 1535 97"
       style={{ backgroundColor: props?.background }}
+      className="divider certificates-divider"
     >
       <path
         fill={props?.fill}

@@ -3,8 +3,6 @@ import "./certificate.styles.scss";
 import TimeSpent from "../details/time-spent/time-spent.element";
 
 function Certificate(props) {
-
-  
   return (
     <div className="certificate">
       <div className="certificate__wrapper">
@@ -16,9 +14,7 @@ function Certificate(props) {
           />
         </div>
         <div className="certificate__info">
-          <div className="certificate__description">
-          {props.description}
-          </div>
+          <div className="certificate__description">{props.description}</div>
 
           <div className="certificate__duration">
             <TimeSpent

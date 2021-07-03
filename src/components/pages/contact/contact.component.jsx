@@ -20,13 +20,22 @@ function Contact(props) {
         emoji="☕️"
         firstColor="#ffbd91"
         secondColor="#f58a8f"
+        link="mailto:hei@martinfjeld.io"
       />
       <SocialMediaLinks>
-        <IconLink link="#" text="Github" color="#eee">
+        <IconLink
+          link="https://www.github.com/martinfjeld"
+          text="Github"
+          color="#eee"
+        >
           <GithubIcon />
         </IconLink>
 
-        <IconLink link="#" text="Linkedin" color="#eee">
+        <IconLink
+          link="https://www.linkedin.com/in/martinfjeld/"
+          text="Linkedin"
+          color="#eee"
+        >
           <LinkedinIcon />
         </IconLink>
 

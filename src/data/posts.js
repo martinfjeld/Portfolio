@@ -1,59 +1,98 @@
 export const posts = [
-    {
-        title: "Forkify",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, aspernatur. Magni repellendus pariatur in expedita magnam, molestiae dolore labore sunt veniam placeat debitis quia exercitationem omnis dolorem animi, veritatis velit.",
-        time: '55',
-        ymh: 'h',
-        technologies: ['sass', 'react', 'html', 'js'],
-        link: 'https://www.example.com/',
-        image: '/images/forkify.png',
-        difficulty: 5,
-        index: 0
-    },
-
-    
-    {
-        title: "Bankist DOM",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, aspernatur. Magni repellendus pxpedita magnam, molestiae dolore labore sunt veniam placeat debitis quia exercitationem omnis dolorem animi, veritatis velit.",
-        time: '9',
-        ymh: 'h',
-        technologies: ['sass', 'html', 'js'],
-        link: 'https://www.example.com/',
-        image: '/images/bankist-dom.png',
-        difficulty: 4,
-        index: 1
-    },
-    {
-        title: "Bankist App",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, aspernatur. Magni repellendus pariatur in expedita magnam, molestiae dolore labore sunt veniam placeat debitis quia exercitationem omnis dolorem animi, veritatis velit.",
-        time: '4',
-        ymh: 'h',
-        technologies: ['sass', 'html', 'js'],
-        link: 'https://www.example.com/',
-        image: '/images/bankist-app.png',
-        difficulty: 4,
-        index: 2
-    },
-    {
-        title: "Natours",
-        description: "Lorem ipsum dolor sit ameur. Magni repellendus pariatur in expedita magnam, molestiae dolore labore sunt veniam placeat debitis quia exercitationem omnis dolorem animi, veritatis velit.",
-        time: '4',
-        ymh: 'h',
-        technologies: ['sass', 'html', 'js'],
-        link: 'https://www.example.com/',
-        image: '/images/natours.png',
-        difficulty: 1,
-        index: 3
-    },
-    {
-        title: "Trillo",
-        description: "Lorem ipsum dolor sit amet consecmagnam, molestiae dolore labore sunt veniam placeat debitis quia exercitationem omnis dolorem animi, veritatis velit.",
-        time: '4',
-        ymh: 'h',
-        technologies: ['sass', 'html', 'js'],
-        link: 'https://www.example.com/',
-        image: '/images/trillo.png',
-        difficulty: 2,
-        index: 4
-    },
-]
+  {
+    title: "Forkify",
+    description:
+      "Forkify is a food recipe app that allows you to search over 100 000 000 recipes, and store your own! This project was one of the most advanced sections in the course with Jonas Schmedtmann. I learned how to store information with pure JS, fetching data from a database, but also storing it in the local storage, and how to use most of the ES5- and ES6 features I learned so far.",
+    time: "55",
+    ymh: "h",
+    technologies: ["css", "html", "js"],
+    link: "https://martinfjeld.github.io/Forkify/",
+    image: "/images/forkify.png",
+    difficulty: 5,
+    index: 0,
+  },
+  {
+    title: "Mapty",
+    description:
+      "Mapty is an application that allows you to track your workout, and store it on the localStorage so that you don't need to worry about losing your progress after closing the browser! In this project, I learned how to request a users location, and load a map from the Leaflet library.",
+    time: "55",
+    ymh: "h",
+    technologies: ["sass", "react", "html", "js"],
+    link: "https://martinfjeld.github.io/Mapty/",
+    image: "/images/mapty.png",
+    difficulty: 5,
+    index: 1,
+  },
+  {
+    title: "Bankist DOM",
+    description:
+      "Landing page for the Bankist App. Learned how to trigger events at scroll, lazy loading and how to optimize images for the best possible performance. This course was early in the process, and I learned a lot of new methods and ways to go when it comes to pure JS.",
+    time: "9",
+    ymh: "h",
+    technologies: ["sass", "html", "js"],
+    link: "https://martinfjeld.github.io/Bankist-DOM/",
+    image: "/images/bankist-dom.png",
+    difficulty: 4,
+    index: 2,
+  },
+  {
+    title: "Bankist App",
+    description:
+      "The Bankist app is a fake bank that allows you to see your balance, loan money (calculates your current balance to see how much you can actually loan) and lets you transfer money to other users. The app also have a timeout function that logs you out if not active in X amount of time.",
+    time: "4",
+    ymh: "h",
+    technologies: ["sass", "html", "js"],
+    link: "https://martinfjeld.github.io/Bankist-app/",
+    image: "/images/bankist-app.png",
+    difficulty: 4,
+    index: 3,
+  },
+  {
+    title: "Natours",
+    description:
+      "Lorem ipsum dolor sit ameur. Magni repellendus pariatur in expedita magnam, molestiae dolore labore sunt veniam placeat debitis quia exercitationem omnis dolorem animi, veritatis velit.",
+    time: "4",
+    ymh: "h",
+    technologies: ["html", "css"],
+    link: "https://www.example.com/",
+    image: "/images/natours.png",
+    difficulty: 1,
+    index: 4,
+  },
+  {
+    title: "Trillo",
+    description:
+      "In this project I learnt how to style via sass and flexbox. Using various tecniques to use icons, svg, media queries and custom root CSS settings, I gained a lot of knowledge to strengthen my styling skills.",
+    time: "4",
+    ymh: "h",
+    technologies: ["sass", "html", "js"],
+    link: "https://martinfjeld.github.io/Trillo/",
+    image: "/images/trillo.png",
+    difficulty: 2,
+    index: 5,
+  },
+  {
+    title: "Pig game",
+    description:
+      "This game is a 2p game! The idea is to get the highest number on your turn. But if the dice turns to 1, it is the next players move, and your current score resets.",
+    time: "4",
+    ymh: "h",
+    technologies: ["sass", "html", "js"],
+    link: "https://martinfjeld.github.io/Pig-game/",
+    image: "/images/natours.png",
+    difficulty: 2,
+    index: 6,
+  },
+  {
+    title: "Guessit",
+    description:
+      "The game is simple: a random integer between 1 and 20 is stored, and the game is to guess it! For every time you guess it wrong, your score shrinks down by one. It also shows your highscore.",
+    time: "4",
+    ymh: "h",
+    technologies: ["sass", "html", "js"],
+    link: "https://martinfjeld.github.io/Guessing-game/",
+    image: "/images/guessit.png",
+    difficulty: 2,
+    index: 7,
+  },
+];

@@ -1,31 +1,99 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import SlideShowBottom from "./slideshow-bottom/slideshow-bottom";
 import SlideShowTop from "./slideshow-top/slideshow-top";
 import "./slideshow.styles.scss";
-import {posts} from '../../../data/posts'
-
-
+import { posts } from "../../../data/posts";
+import gsap from "gsap/gsap-core";
 
 function Slideshow(props) {
   const [post, setPost] = useState(posts[0]);
 
-  useEffect(() => {
+  // Check querysize
+  const mql = window.matchMedia("(max-width: 37.5em)");
 
-  }, [])
+  // Show or hide loading animation
+  const manipulateLoader = (state) => {
+    document.querySelector(".overlay__loader").style.display =
+      state === "show" ? "block" : "none";
+  };
 
-  function nextPost(){
-      (post.index !== posts.length -1) && setPost(posts[post.index +1]);
-  }
+  // Setting the post index
+  const nextIndex = () => {
+    document.querySelector(".project-title").style.marginLeft = mql.matches
+      ? "-200%"
+      : "-100%";
+    setPost(posts[post.index + 1]);
+  };
 
-  function prevPost(){
-    (post.index > 0) && setPost(posts[post.index -1]);
-  }
-  
+  const prevIndex = () => {
+    document.querySelector(".project-title").style.marginLeft = mql.matches
+      ? "200%"
+      : "100%";
+    setPost(posts[post.index - 1]);
+  };
+
+  // What to do when the image is loaded
+  const handleImageLoaded = () => {
+    document.querySelector(".overlay__img").style.display = "block";
+
+    gsap.to(document.querySelector(".project-title"), {
+      marginLeft: "0%",
+      ease: "elastic.out(1, 0.9)",
+    });
+
+    manipulateLoader("hide");
+  };
+
+  const nextPost = () => {
+    let tl = gsap.timeline();
+    if (post.index === posts.length - 1) return;
+
+    document.querySelector(".overlay__img").style.display = "none";
+    manipulateLoader("show");
+
+    tl.to(document.querySelector(".project-title"), {
+      marginLeft: mql.matches ? "200%" : "100%",
+    }).then(() => {
+      nextIndex();
+    });
+  };
+
+  const prevPost = () => {
+    let tl = gsap.timeline();
+    if (!post.index > 0) return;
+
+    document.querySelector(".overlay__img").style.display = "none";
+    manipulateLoader("show");
+
+    tl.to(document.querySelector(".project-title"), {
+      marginLeft: mql.matches ? "-200%" : "-100%",
+    }).then(() => {
+      prevIndex();
+    });
+  };
+
   return (
     <div className={`slideshow ${props?.classes}`}>
-      <SlideShowTop image={post.image} isNext={post.index}
-      dataLength={posts.length -1} rightClick={nextPost} leftClick={prevPost} background={props?.background} />
-      <SlideShowBottom languages={post.technologies} description={post.description} background={props?.background} ymh={post.ymh} time={post.time} text={post.title} difficulty={post.difficulty} />
+      <SlideShowTop
+        image={post.image}
+        loader="/images/loading.gif"
+        isNext={post.index}
+        handleImageLoaded={handleImageLoaded}
+        dataLength={posts.length - 1}
+        rightClick={nextPost}
+        leftClick={prevPost}
+        background={props?.background}
+      />
+      <SlideShowBottom
+        link={post.link}
+        languages={post.technologies}
+        description={post.description}
+        background={props?.background}
+        ymh={post.ymh}
+        time={post.time}
+        text={post.title}
+        difficulty={post.difficulty}
+      />
     </div>
   );
 }

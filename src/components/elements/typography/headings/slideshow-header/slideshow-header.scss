@@ -8,14 +8,22 @@
   margin-left: 7rem;
   padding: 1rem 0;
 
+  @media only screen and (max-width: 37.5em) {
+    margin: 0 auto;
+  }
+
   .project-title {
     text-transform: uppercase;
-    font-weight: 600;
+    font-family: apercubold;
     font-size: 6rem;
     margin: 0px;
     padding: 0px;
     opacity: 0.9;
     white-space: nowrap;
+
+    @media only screen and (max-width: 37.5em) {
+      font-size: 4.5rem;
+    }
 
     .technologies {
       font-size: 2rem;

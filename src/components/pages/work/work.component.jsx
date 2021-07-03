@@ -2,7 +2,7 @@ import React from "react";
 import CertificatesDivider from "../../elements/dividers/certificates/certificates-divider.element";
 import Slideshow from "../../sections/slideshow/slideshow.component";
 import "./work.styles.scss";
-import {posts} from '../../../data/posts'
+import { posts } from "../../../data/posts";
 
 console.log(posts);
 
@@ -14,6 +14,7 @@ function Work(props) {
     >
       <Slideshow background="var(--color-tertiary-light)" />
       <CertificatesDivider
+        className="work-header"
         background="var(--color-tertiary-light)"
         fill="var(--color-tertiary-dark)"
       />

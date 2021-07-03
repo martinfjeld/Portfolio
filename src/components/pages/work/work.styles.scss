@@ -1,4 +1,8 @@
 .work {
   display: flex;
   flex: 1;
+
+  @media only screen and (max-width: 37.5em) {
+    min-height: auto;
+  }
 }

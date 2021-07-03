@@ -3,6 +3,12 @@
   flex-direction: column;
   min-height: 40vh;
   background-color: var(--color-tertiary-light);
+
+  @media only screen and (max-width: 37.5em) {
+    flex-direction: column;
+    min-height: auto;
+  }
+
   &__cta-section {
     display: flex;
     justify-content: center;
@@ -16,11 +22,20 @@
     box-shadow: 5px 5px 20px #293b48, -5px -5px 20px #4c6c85;
     flex: 1;
 
+    @media only screen and (max-width: 37.5em) {
+      flex-direction: column-reverse;
+      width: 100%;
+    }
+
     .details {
       display: flex;
       flex-direction: column;
       justify-content: center;
       padding: 7rem;
+
+      @media only screen and (max-width: 37.5em) {
+        padding: 1rem 3rem;
+      }
     }
 
     & > div {

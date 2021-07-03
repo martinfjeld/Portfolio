@@ -7,30 +7,24 @@ import CSSIcon from "../../icons/code-languages/CSS/css.icon";
 import ReactIcon from "../../icons/code-languages/react/react.icon";
 
 function TechnologiesDetails(props) {
-  
   const tagNames = {
     js: JavaScriptIcon,
     sass: SassIcon,
     html: HTMLIcon,
     css: CSSIcon,
-    react: ReactIcon
-  }
+    react: ReactIcon,
+  };
 
-
-
-  const languages = props.languages.map(language => language);
+  const languages = props.languages.map((language) => language);
   console.log(languages);
 
   return (
-    
     <div className="technologies-details">
       <div className="technologies-details__container">
-      {
-        languages.map((language, i) => {
+        {languages.map((language, i) => {
           const TagName = tagNames[language];
-        return <TagName key={i} />
-      })}
-        
+          return <TagName key={i} />;
+        })}
       </div>
       <p>Technologies</p>
     </div>

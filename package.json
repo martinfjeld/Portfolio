@@ -13,9 +13,9 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "DISABLE_ESLINT_PLUGIN=true react-scripts start",
+    "build": "DISABLE_ESLINT_PLUGIN=true react-scripts build",
+    "test": "DISABLE_ESLINT_PLUGIN=true react-scripts test",
     "eject": "react-scripts eject",
     "watch:sass": "sass --watch src/styles/base.scss src/App.css",
     "run:all": "npm-run-all start watch:sass"
@@ -33,9 +33,14 @@
     ]
   },
   "devDependencies": {
+    "eslint": "^7.29.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
     "file-loader": "^6.1.1",
     "gsap": "npm:@gsap/shockingly@^3.7.0",
     "npm-run-all": "^4.1.1",
+    "prettier": "^2.3.2",
     "sass": "^1.35.1",
     "url-loader": "^3.0.0"
   }

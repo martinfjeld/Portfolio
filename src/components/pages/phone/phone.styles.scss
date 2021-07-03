@@ -3,9 +3,25 @@
   color: #fff;
   overflow: hidden;
   height: auto;
-}
 
+  .flex-start {
+    align-items: flex-start;
+    margin-left: 0;
+
+    .secondary-phone-header {
+      @media only screen and (max-width: 37.5em) {
+        transform: translateY(5rem);
+        align-items: center;
+      }
+    }
+  }
+}
 
 .phone-element {
   justify-items: flex-start;
+
+  @media only screen and (max-width: 37.5em) {
+    transform: translateY(-10rem);
+    justify-self: center;
+  }
 }

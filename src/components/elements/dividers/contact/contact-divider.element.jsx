@@ -6,12 +6,13 @@ function ContactDivider(props) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="100%"
+      height="100%"
       x="0"
       y="0"
       enableBackground="new 0 0 1920 428.398"
-      overflow="visible"
       viewBox="0 0 1920 428.398"
       style={{ backgroundColor: props?.background }}
+      className="divider"
     >
       <path
         fill={props?.fill}

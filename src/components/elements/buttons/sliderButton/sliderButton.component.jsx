@@ -8,10 +8,10 @@ function SliderButton(props) {
   return (
     <div className={`slider-button ${props.direction}--btn`} onClick={props?.handleClick}>
       {props?.direction === "right" && (
-        <Right color="var(--color-primary-dark)" />
+        <Right color="currentColor" />
       )}
       {props?.direction === "left" && (
-        <Left color="var(--color-primary-dark)" />
+        <Left color="currentColor" />
       )}
     </div>
   );

@@ -6,9 +6,9 @@ function PhoneElement(props) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      width="332.7"
-      height="751.2"
+      width="100%"
       enableBackground="new 0 0 332.693 751.213"
+      viewBox="0 0 332.693 751.213"
       overflow="visible"
       className={props?.classes}
     >

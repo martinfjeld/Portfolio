@@ -37,9 +37,11 @@
     right: 0;
   }
 
-  &:hover {
-    transform: scale(1.2) translateY(-0.5rem);
-    box-shadow: 0rem 1.5rem 0.7rem rgba(#000000, 0.2);
-    border-radius: 2rem;
+  @media (hover: hover) {
+    &:hover {
+      transform: scale(1.2) translateY(-0.5rem);
+      box-shadow: 0rem 1.5rem 0.7rem rgba(#000000, 0.2);
+      border-radius: 2rem;
+    }
   }
 }

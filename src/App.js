@@ -1,5 +1,5 @@
-import "./styles/base.scss"
-import React from 'react';
+import React from "react";
+import "./styles/base.scss";
 
 // SECTIONS
 import Intro from "./components/pages/intro/intro.component";

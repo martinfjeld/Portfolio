@@ -1,11 +1,11 @@
 import React from "react";
 import "./underlined.styles.scss";
 
-function UnderlinedButton() {
+function UnderlinedButton(props) {
   return (
     <div className="underlined-btn">
-      <a href="https://www.example.com" className="underlined-btn__link">
-        <p className="underlined-btn-btn">Visit project &rarr;</p>
+      <a href={props?.link} target="_blank" className="underlined-btn__link" rel="noreferrer">
+        <p className="underlined-btn-btn">{props?.text} &rarr;</p>
       </a>
     </div>
   );

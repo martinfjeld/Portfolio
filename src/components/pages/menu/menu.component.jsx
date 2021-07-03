@@ -1,6 +1,6 @@
 import React from "react";
 
-function Menu() {
+function Menu(props) {
   return (
     <div className={`menu ${props.classes}`}>
       <h1>Menu section</h1>

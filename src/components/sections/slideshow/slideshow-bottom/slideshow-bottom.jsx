@@ -16,10 +16,16 @@ function SlideShowBottom(props) {
       <div className="slideshow-description__info">
         <div className="details">
           <ProjectParagraph text={props?.description} />
-          <Details ymh={props.ymh} size="2.5rem" time={props.time} languages={props.languages} difficulty={props.difficulty} />
+          <Details
+            ymh={props.ymh}
+            size="2.5rem"
+            time={props.time}
+            languages={props.languages}
+            difficulty={props.difficulty}
+          />
         </div>
         <div className="slideshow-description__cta-section">
-          <UnderlinedButton />
+          <UnderlinedButton link={props?.link} text="Visit project" />
         </div>
       </div>
     </div>
