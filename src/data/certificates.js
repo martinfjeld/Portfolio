@@ -11,7 +11,7 @@ export const certificates = [
   },
   {
     name: "JS course CodeCademy",
-    duration: "5",
+    duration: "8",
     ymh: "months",
     description:
       "The full JavaScript course in CodeCademy helped me understand what I couldn`t understand in the course from Jonas Schmedtmann. So I took them both simultanisly. Learning all the basics, all the way up to advanced topics.",
@@ -68,7 +68,7 @@ export const certificates = [
     duration: "6",
     ymh: "months",
     description:
-      "In this course, I learnt the basics of Swift. It gave me a clear vision of how programming works, and ",
+      "In this course, I learnt the basics of Swift. It gave me a clear vision of how programming works, and how to proceed my learning into something solid. I also made small applications and games from a course in TeamTreehouse, but that course retired short after I finished.",
     image: "/images/certificates/swift.jpg",
     link: "https://www.codecademy.com/profiles/martinfjeld/certificates/18e90daa65479a37c8f909893ada3694",
     id: 7,

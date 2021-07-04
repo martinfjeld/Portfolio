@@ -188,8 +188,8 @@ svg {
   z-index: 9;
   display: block !important;
   font-size: 0px !important;
-  // -webkit-backface-visibility: hidden;
-  // -webkit-transform: scale(1);
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: scale(1);
 }
 
 img {

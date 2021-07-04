@@ -13,7 +13,7 @@ function TimeSpent(props) {
       </div>
       <span className="hours-spent" style={{ fontSize: props?.size }}>
         {props?.time}
-        {props?.ymh.length > 1 && " "}
+        {props?.ymh.length > 2 && " "}
         {props?.ymh.toLowerCase()}
       </span>
     </div>

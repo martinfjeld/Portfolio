@@ -58,7 +58,7 @@ export const PhoneAnimation = () => {
     },
 
     scale: mqlPhone.matches ? 1.6 : 2,
-    translateY: mqlPhone.matches ? -150 : -100,
+    translateY: mqlPhone.matches ? -200 : -100,
     translateX: mqlPhone.matches ? null : 300,
   });
 
