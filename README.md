@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Portfolio
+
+This is the current site, my personal portfolio. I've put all my knowledge together to make this site, and also made it over with React. I have been learning React for one month now, and I am still in the learning process. I had a lot of fun building it both with pure JS and with React!
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
