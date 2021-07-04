@@ -48,16 +48,28 @@ export const posts = [
     index: 3,
   },
   {
+    title: "Math Game",
+    description:
+      "A simple math game with 3 different difficulties. It also keeps track of your highscore. This was the very first project I made completely on my own after watching some lessons on JS.",
+    time: "4",
+    ymh: "h",
+    technologies: ["sass", "html", "js"],
+    link: "https://martinfjeld.github.io/Math-game/",
+    image: "/images/math_game.png",
+    difficulty: 3,
+    index: 4,
+  },
+  {
     title: "Natours",
     description:
-      "Lorem ipsum dolor sit ameur. Magni repellendus pariatur in expedita magnam, molestiae dolore labore sunt veniam placeat debitis quia exercitationem omnis dolorem animi, veritatis velit.",
+      "Natours was built upon pure oldschool CSS3, using floats and positions. I also learned how to implement images for different devices to prevent site perfprmance to decrease. The menu uses the checkbox hack, and input requires a real mail address. All these with help of the oldschool way of styling.",
     time: "4",
     ymh: "h",
     technologies: ["html", "css"],
-    link: "https://www.example.com/",
+    link: "https://martinfjeld.github.io/Natours/",
     image: "/images/natours.png",
     difficulty: 1,
-    index: 4,
+    index: 5,
   },
   {
     title: "Trillo",
@@ -69,19 +81,19 @@ export const posts = [
     link: "https://martinfjeld.github.io/Trillo/",
     image: "/images/trillo.png",
     difficulty: 2,
-    index: 5,
+    index: 6,
   },
   {
     title: "Pig game",
     description:
-      "This game is a 2p game! The idea is to get the highest number on your turn. But if the dice turns to 1, it is the next players move, and your current score resets.",
+      "This is a 2-player game! The idea is to get the highest number on your turn. But if the dice turns to 1, it is the next players move, and your current score resets. First to 100 wins the game!",
     time: "4",
     ymh: "h",
     technologies: ["sass", "html", "js"],
     link: "https://martinfjeld.github.io/Pig-game/",
-    image: "/images/natours.png",
+    image: "/images/pig-game.png",
     difficulty: 2,
-    index: 6,
+    index: 7,
   },
   {
     title: "Guessit",
@@ -93,6 +105,6 @@ export const posts = [
     link: "https://martinfjeld.github.io/Guessing-game/",
     image: "/images/guessit.png",
     difficulty: 2,
-    index: 7,
+    index: 8,
   },
 ];

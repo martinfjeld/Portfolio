@@ -11,7 +11,7 @@ gsap.registerPlugin(
   DrawSVGPlugin
 );
 
-let mql = window.matchMedia("(max-width: 37.5em)");
+let mqlPhone = window.matchMedia("(max-width: 56.5em)");
 
 export const TechnologiesAnimation = () => {
   gsap.to(
@@ -20,7 +20,6 @@ export const TechnologiesAnimation = () => {
       scrollTrigger: {
         trigger: ".technologies",
         start: "top center",
-        toggleActions: "play none none reverse",
       },
       rotate: 0,
       translateX: 0,
@@ -58,9 +57,9 @@ export const PhoneAnimation = () => {
       },
     },
 
-    scale: mql.matches ? 1.6 : 2,
-    translateY: mql.matches ? -150 : -100,
-    translateX: mql.matches ? null : 300,
+    scale: mqlPhone.matches ? 1.6 : 2,
+    translateY: mqlPhone.matches ? -150 : -100,
+    translateX: mqlPhone.matches ? null : 300,
   });
 
   gsap.to(".secondary-phone-header", {
@@ -70,13 +69,13 @@ export const PhoneAnimation = () => {
       scrub: 1,
     },
     scale: 3,
-    translateY: mql.matches ? -200 : null,
-    translateX: mql.matches ? null : 1400,
+    translateY: mqlPhone.matches ? -200 : null,
+    translateX: mqlPhone.matches ? null : 1400,
   });
 
-  // var mql = window.matchMedia('(max-width: 600px)');
+  // var mqlPhone = window.matchMedia('(max-width: 600px)');
 
-  // if(mql.matches)
+  // if(mqlPhone.matches)
 
   gsap.to("#first-gradient", {
     scrollTrigger: {

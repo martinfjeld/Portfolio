@@ -1,8 +1,10 @@
+@import '../../../styles/mixins.scss';
+
 .work {
   display: flex;
   flex: 1;
 
-  @media only screen and (max-width: 37.5em) {
+  @include respond(phone) {
     min-height: auto;
   }
 }

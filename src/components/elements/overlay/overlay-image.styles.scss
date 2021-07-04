@@ -1,3 +1,5 @@
+@import '../../../styles/mixins.scss';
+
 .overlay {
   position: absolute;
   width: 100%;
@@ -5,7 +7,13 @@
   background-color: #e4818d;
   z-index: -1;
 
-  @media only screen and (max-width: 37.5em) {
+
+  @include respond(tab-port) {
+    display: flex;
+    justify-content: center;
+  }
+
+  @include respond(phone) {
     display: flex;
     justify-content: center;
   }
@@ -24,10 +32,19 @@
   }
 
   &__img {
-    @media only screen and(max-width: 37.5em) {
+
+    
+    
+    @include respond(tab-port) {
       width: auto;
       height: 70vh;
     }
+    
+    @include respond(phone) {
+      width: auto;
+      height: 70vh;
+    }
+    
     display: block;
     width: 100%;
     height: auto;
@@ -35,7 +52,7 @@
   }
 
   &__loader {
-    @media only screen and(max-width: 37.5em) {
+    @include respond(phone) {
       top: 35%;
       width: 40%;
     }

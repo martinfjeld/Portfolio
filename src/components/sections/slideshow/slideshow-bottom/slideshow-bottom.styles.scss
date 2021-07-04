@@ -1,18 +1,23 @@
+@import '../../../../styles/mixins.scss';
+
 .slideshow-description {
   display: flex;
   flex-direction: column;
   min-height: 40vh;
   background-color: var(--color-tertiary-light);
 
-  @media only screen and (max-width: 37.5em) {
+  @include respond(phone) {
     flex-direction: column;
     min-height: auto;
   }
+
+  
 
   &__cta-section {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 0 0 40%;
   }
 
   &__info {
@@ -22,7 +27,12 @@
     box-shadow: 5px 5px 20px #293b48, -5px -5px 20px #4c6c85;
     flex: 1;
 
-    @media only screen and (max-width: 37.5em) {
+    @include respond(phone) {
+      flex-direction: column-reverse;
+      width: 100%;
+    }
+
+    @include respond(tab-port) {
       flex-direction: column-reverse;
       width: 100%;
     }
@@ -32,14 +42,22 @@
       flex-direction: column;
       justify-content: center;
       padding: 7rem;
+      flex: 0 0 60%;
 
-      @media only screen and (max-width: 37.5em) {
+  
+      @include respond(tab-port) {
+        padding: 0 10rem;
+      }
+
+      @include respond(phone) {
         padding: 1rem 3rem;
       }
+
     }
 
     & > div {
-      flex: 0 0 50%;
+
+
     }
   }
 }

@@ -1,3 +1,5 @@
+@import '../../../styles/mixins.scss';
+
 .phone {
   background-color: var(--color-primary-light);
   color: #fff;
@@ -9,7 +11,7 @@
     margin-left: 0;
 
     .secondary-phone-header {
-      @media only screen and (max-width: 37.5em) {
+      @include respond(phone) {
         transform: translateY(5rem);
         align-items: center;
       }
@@ -20,8 +22,14 @@
 .phone-element {
   justify-items: flex-start;
 
-  @media only screen and (max-width: 37.5em) {
+  @include respond(tab-port) {
+    transform: translateY(-20rem);
+    justify-self: center;
+  }
+
+  @include respond(phone) {
     transform: translateY(-10rem);
     justify-self: center;
   }
+
 }

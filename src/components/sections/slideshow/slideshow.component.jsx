@@ -8,9 +8,6 @@ import gsap from "gsap/gsap-core";
 function Slideshow(props) {
   const [post, setPost] = useState(posts[0]);
 
-  // Check querysize
-  const mql = window.matchMedia("(max-width: 37.5em)");
-
   // Show or hide loading animation
   const manipulateLoader = (state) => {
     document.querySelector(".overlay__loader").style.display =
@@ -19,16 +16,12 @@ function Slideshow(props) {
 
   // Setting the post index
   const nextIndex = () => {
-    document.querySelector(".project-title").style.marginLeft = mql.matches
-      ? "-200%"
-      : "-100%";
+    document.querySelector(".project-title").style.marginLeft = "-200%";
     setPost(posts[post.index + 1]);
   };
 
   const prevIndex = () => {
-    document.querySelector(".project-title").style.marginLeft = mql.matches
-      ? "200%"
-      : "100%";
+    document.querySelector(".project-title").style.marginLeft = "200%";
     setPost(posts[post.index - 1]);
   };
 
@@ -52,7 +45,7 @@ function Slideshow(props) {
     manipulateLoader("show");
 
     tl.to(document.querySelector(".project-title"), {
-      marginLeft: mql.matches ? "200%" : "100%",
+      marginLeft: "200%",
     }).then(() => {
       nextIndex();
     });
@@ -66,7 +59,7 @@ function Slideshow(props) {
     manipulateLoader("show");
 
     tl.to(document.querySelector(".project-title"), {
-      marginLeft: mql.matches ? "-200%" : "-100%",
+      marginLeft: "-200%",
     }).then(() => {
       prevIndex();
     });

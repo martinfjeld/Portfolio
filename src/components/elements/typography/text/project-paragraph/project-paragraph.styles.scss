@@ -1,9 +1,18 @@
+@import '../../../../../styles/mixins.scss';
+
 .project-paragraph {
   font-size: 1.5rem;
   color: currentColor;
 
-  @media only screen and (max-width: 37.5em) {
+
+
+  @include respond(tab-port) {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
+  }
+
+  @include respond(phone) {
+    text-align: center;
+    font-size: 1.7rem;
   }
 }

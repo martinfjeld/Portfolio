@@ -17,7 +17,7 @@
     "build": "DISABLE_ESLINT_PLUGIN=true react-scripts build",
     "test": "DISABLE_ESLINT_PLUGIN=true react-scripts test",
     "eject": "react-scripts eject",
-    "watch:sass": "sass --watch src/styles/base.scss src/App.css",
+    "watch:sass": "sass --watch src/styles/base.scss src/App.css -w",
     "run:all": "npm-run-all start watch:sass"
   },
   "browserslist": {

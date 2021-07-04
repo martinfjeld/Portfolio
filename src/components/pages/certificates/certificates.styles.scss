@@ -1,3 +1,5 @@
+@import '../../../styles/mixins.scss';
+
 .certificates {
   background-color: var(--color-tertiary-dark);
   padding-top: 15rem;
@@ -13,9 +15,17 @@
     width: 90%;
     margin: auto;
 
-    @media only screen and (max-width: 37.5em) {
-      flex-direction: column;
-      width: 90%;
-    }
+
+    @include respond(phone) {
+        flex-direction: column;
+        width: 90%;
+      }
+
+
+      @include respond(tab-port) {
+
+          width: 100%;
+        }
+
   }
 }

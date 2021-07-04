@@ -1,13 +1,19 @@
+@import '../../../styles/mixins.scss';
+
 .certificate {
   display: flex;
   flex: 0 0 33%;
   justify-content: center;
 
+  @include respond(tab-port){
+    flex: 0 0 50%;
+  }
+
   &__image-container {
     overflow: hidden;
     border-radius: 50px;
     background: linear-gradient(145deg, #3b5367, #324656);
-    box-shadow: 15px 15px 30px #293b48, -15px -15px 30px #456278;
+    box-shadow: 7px 7px 15px #293b48, -7px -7px 15px #456278;
     border: 1.5rem solid #3e576c;
     font-size: 0px;
   }
@@ -17,7 +23,7 @@
     background-color: #374e60;
     padding: 2rem;
 
-    @media only screen and(max-width: 37.5em) {
+    @include respond(phone) {
       width: 90%;
     }
   }
@@ -34,7 +40,7 @@
     flex: 0 0 80%;
     margin-right: auto;
 
-    @media only screen and(max-width: 37.5em) {
+    @include respond(phone) {
       font-size: 1.7rem;
       text-align: center;
     }
@@ -49,7 +55,7 @@
     margin-right: auto;
     padding: 1rem 0;
 
-    @media only screen and(max-width: 37.5em) {
+    @include respond(phone) {
       margin: 1.5rem auto 1rem auto;
     }
 

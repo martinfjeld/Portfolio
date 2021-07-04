@@ -1,3 +1,6 @@
+@import 'mixins';
+
+
 :root {
   // COLORS
 
@@ -144,7 +147,13 @@ a {
 .flex-50-50 {
   display: flex;
 
-  @media only screen and (max-width: 37.5em) {
+  @include respond(phone) {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include respond(tab-port) {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
@@ -156,7 +165,11 @@ a {
     margin: auto;
     justify-content: center;
     align-items: center;
-    @media only screen and (max-width: 37.5em) {
+    @include respond(tab-port) {
+      margin: 0;
+      width: 60%;
+    }
+    @include respond(phone) {
       margin: 0;
       width: 80%;
     }

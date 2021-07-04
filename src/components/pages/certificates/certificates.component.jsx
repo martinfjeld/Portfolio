@@ -21,6 +21,7 @@ function Certificates(props) {
                 duration={post.duration}
                 description={post.description}
                 ymh={post.ymh}
+                link={post.link}
               />
             );
           })}

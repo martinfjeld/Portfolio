@@ -7,11 +7,13 @@ function Certificate(props) {
     <div className="certificate">
       <div className="certificate__wrapper">
         <div className="certificate__image-container">
-          <img
-            alt={`Certificate ${props.name}`}
-            className="certificate__image"
-            src={process.env.PUBLIC_URL + props?.image}
-          />
+          <a href={props?.link} target="_blank" rel="noreferrer">
+            <img
+              alt={`Certificate ${props.name}`}
+              className="certificate__image"
+              src={process.env.PUBLIC_URL + props?.image}
+            />
+          </a>
         </div>
         <div className="certificate__info">
           <div className="certificate__description">{props.description}</div>
